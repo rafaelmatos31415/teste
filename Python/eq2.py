@@ -30,3 +30,4 @@ if delta >= 0:
     """print ('A equação {}x² + {}x + {} tem as raízes:\n{}\n{}'.format(a, b, c, bhask1, bhask2))"""
 else:
     print ('Delta é menor de zero. Portanto, não tem raízes reais.')
+#teste teste 8a8a8a8a8a8a8
