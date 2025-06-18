@@ -3,7 +3,10 @@ a = float(input('Digite o valor de A: '))
 b = float(input('Digite o valor de B: '))
 c = float(input('Digite o valor de C: '))
 delta = (b ** 2) - 4*a*c
-if delta >= 0:
+if a == 0:
+    print ('A = 0, portanto, não é uma equação de segundo grau!')
+    exit()
+elif delta >= 0:
     bhask1 = (-b + sqrt(delta)) / (2*a)
     bhask2 = (-b - sqrt(delta)) / (2*a)
     if bhask1.is_integer():
@@ -27,6 +30,5 @@ if delta >= 0:
     else:
         c1 = c
     print ('A equação {}x² + {}x + {} tem as raízes:\n{}\n{}'.format(a1, b1, c1, bhask1_formatado, bhask2_formatado))
-    """print ('A equação {}x² + {}x + {} tem as raízes:\n{}\n{}'.format(a, b, c, bhask1, bhask2))"""
 else:
     print ('Delta é menor de zero. Portanto, não tem raízes reais.')
